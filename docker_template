@@ -27,8 +27,8 @@ RUN echo "c.NotebookApp.password = u'sha1:6a3f528eec40:6e896b6e4828f525a6e20e541
 
 # Jupyter listens port: 8888
 # changed port from 8888 to 8881
-EXPOSE 8888
+EXPOSE 8881
 
 # Run Jupyter notebook as Docker main process
-CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/opt/notebooks", "--ip='*'", "--port=8888", "--no-browser"]
+CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/opt/notebooks", "--ip='*'", "--port=8881", "--no-browser"]
 
